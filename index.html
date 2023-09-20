@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily Beads - Student Page</title>
+
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="student1.css">
+
+</head>
+<body>
+
+  <!-- header section starts   -->
+  <header class="header">
+
+    <section class="flex">
+
+      <a href="#home" class="logo"><img src="logo.png" alt=""></a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">accessories & customize</a>
+        <a href="#contact">contact</a>
+      </nav>
+    
+      <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      
+      <div class="search-form">
+        <div id="search-btn" class="fas fa-search"></div>
+        <input type="search" id="search-box" placeholder="search here...">
+      </div>
+      </div>
+    </section>
+
+  </header>
+  <!-- header section ends   -->
+
+  <!-- home section starts -->
+  <div class="home-bg">
+
+    <section class="home" id="home">
+
+        <div class="image">
+            <img src="logo.png" alt="">
+          </div>
+
+      <div class="content">
+        <h3>Lily Beads</h3>
+        <p>Home of beautiful and elegant accessories where your style is our style.</p>
+        <a href="#about" class="btn">about us</a>
+      </div>
+
+    </section>
+
+  </div>
+  <!-- home section ends -->
+
+  <!-- about section starts -->
+  <section class="about" id="about">
+
+    <div class="image">
+      <img src="aboutus.jpg" alt="">
+    </div>
+
+    <div class="content">
+      <h3>About us</h3>
+      <p>Mainly established in Early 2023. Behind this is a woman who loves creating personal accessories with the use of beads, which later led her to sell it for an affordable price.</p>
+      <a href="#products" class="btn">Accessories</a>
+    </div>
+
+  </section>
+  <!-- about section ends -->
+
+  <!-- product section starts -->
+  <section class="products" id="products">
+
+    <div class="heading">
+      <h3>Products</h3>
+    </div>
+  
+    <div class="box-container">
+  
+      <!-- Necklace -->
+      <div class="box" id="product1">
+        <img src="necklace.jpeg" alt="" class="product-image-small">
+        <h3>Necklace</h3>
+        <p>Price: $90</p>
+        <select id="necklace-size">
+            <option value="14 inches">14 inches</option>
+            <option value="15 inches">16 inches</option>
+            <option value="16 inches">18 inches</option>
+            </select>
+            <select id="necklace-color1">
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Black">Black</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="White">White</option>
+                <!-- Add more color options as needed -->
+              </select>
+              <select id="necklace-color2">
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+                <!-- Add more color options as needed -->
+              </select>
+              
+  <select id="necklace-pendant">
+    <option value="None">No Pendant</option>
+    <option value="Butterfly">Butterfly</option>
+    <option value="White Pearl">White Pearl</option>
+    <option value="Black Pentagon">Black Pentagon</option>
+    <option value="Flower">Flower</option>
+    <!-- Add more pendant options as needed -->
+  </select>
+        <div>
+            <p>Qty.</p>
+            <input type="number" id="Necklace-quantity" value="1" min="0">
+            <button class="atc-btn" onclick="addToCart('Necklace', 90)">Add to Cart</button>
+            <br></br>
+     
+            <br></br>
+        </div>
+      </div>
+  
+      <!-- Ring and Bracelet Combo -->
+      <div class="box" id="product2">
+        <img src="combo.jpeg" alt="" class="product-image-small">
+        <h3>Ring & Bracelet Combo</h3>
+        <p>Price: $60</p>
+        <select id="combo-color1">
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+            <!-- Add more color options as needed -->
+          </select>
+        <select id="combo-color2">
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+            <!-- Add more color options as needed -->
+          </select>
+        <div>
+            <p>Qty.</p>
+            <input type="number" id="Ring and Bracelet Combo-quantity" value="1" min="0">
+            <button class="atc-btn" onclick="addToCart('Ring and Bracelet Combo', 60)">Add to Cart</button>
+            <br></br>
+      
+            <br></br>
+        </div>
+      </div>
+  
+      <!-- Bracelet -->
+      <div class="box" id="product3">
+        <img src="brlet.jpeg" alt="" class="product-image-small">
+        <h3>Bracelet</h3>
+        <p>Price: $30</p>
+        <select id="bracelet-color1">
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+            <!-- Add more color options as needed -->
+          </select>
+        <select id="bracelet-color2">
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+            <!-- Add more color options as needed -->
+          </select>
+        <div>
+            <p>Qty.</p>
+            <input type="number" id="Bracelet-quantity" value="1" min="0">
+            <button class="atc-btn" onclick="addToCart('Bracelet', 30)">Add to Cart</button>
+            <br></br>
+            <br></br>
+            
+        </div>
+      </div>
+  
+      <!-- Cart -->
+      <div class="cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items">
+          <!-- Cart items will be added here dynamically -->
+        </ul>
+        <p>Total: <span id="cart-total">$0</span></p>
+        <button id="delete-cart-btn" onclick="deleteCart()">Delete Cart</button>
+        <button id="checkout-btn" onclick="checkout()">Checkout</button>
+      </div>
+    </div>
+  </section>
+  <!-- product section ends -->
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+
+    <div class="heading">
+      <h3>contact us</h3>
+    </div>
+  
+    <div class="row">
+  
+      <div class="image">
+        <img src="contact.jpg" alt="">
+      </div>
+  
+      <form action="" method="post">
+        <h3>Contact Us!</h3>
+        <input type="text" name="name" id="" required class="box" maxlength="20" placeholder="enter your name">
+        <input type="number" name="number" id="" required class="box" maxlength="20" placeholder="enter your number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+        <input type="number" name="accessorieS" id="" required class="box" maxlength="20" placeholder="how many accessories" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+        <!-- Add an id to the "Send Message" button -->
+        <input type="button" value="send message" class="btn" id="sendMessageButton">
+      </form>
+  
+    </div>
+  
+  </section>
+  <!-- contact section ends -->
+
+  <!-- footer section starts -->
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <i class="fas fa-envelope"></i>
+        <h3>our email</h3>
+        <p>lilybeads@gmail.com</p>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-clock"></i>
+        <h3>opening hours</h3>
+        <p>00:00am to 00:00pm</p>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>shop location</h3>
+        <p>Davao City</p>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-phone"></i>
+        <h3>Contact number</h3>
+        <p>09456456456</p>
+      </div>
+
+    </div>
+
+    <div class="credit"> &copy; copyright 2023 by <span>Danielle Joshua B. Orihuela</span> | CPE143L.A361 </div>
+
+  </section>
+  <!-- footer section ends -->
+  <script src="student1.js"></script>
+
+</body>
+</html>
